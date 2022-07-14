@@ -1,5 +1,6 @@
 import './App.css';
 import Apod from './Apod';
+import Satimg from './Satimg';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
        className='text-white text-3xl mx-auto font-semibold' 
        >Nasa Api</h1>
        <Apod/>
+       <Satimg />
     </div>
     );
 }
