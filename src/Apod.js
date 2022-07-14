@@ -7,7 +7,9 @@ function Apod() {
 
   // const API_KEY = process.env.REACT_APP_API_KEY;
 
-  const api_key = process.env.API_key;;
+  const api_key = process.env.API_key;
+
+  console.log(api_key)
 
   
 
