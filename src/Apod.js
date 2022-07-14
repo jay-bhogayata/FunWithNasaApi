@@ -5,18 +5,16 @@ import Axios from "axios";
 function Apod() {
   const [details, setDetails] = useState({});
 
-  // const API_KEY = process.env.REACT_APP_API_KEY;
+  const API_KEY = process.env.REACT_APP_API_KEY;
 
-  const api_key = process.env.API_key;
-
-  console.log(api_key)
+  console.log(API_KEY)
 
   
 
   const fetchDetails = async () => {
     const { data } = await Axios.get(
-      // `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`
-      `https://api.nasa.gov/planetary/apod?api_key=${api_key}`
+      `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`
+      
     );
 
     console.log(data);
